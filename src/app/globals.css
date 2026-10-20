@@ -1,4 +1,46 @@
+@import url('https://fonts.bunny.net/css?family=amaranth:400,700');
 @import "tailwindcss";
+
+:root {
+  /* ========================================================================
+     MASTER BRAND THEME COLOR CONFIGURATION
+     Switch this single parent variable (--brand-accent) to instantly 
+     re-theme all buttons, logos, badges, highlights, rings, and accents!
+     ======================================================================== */
+  --brand-accent: #e11d48;         /* Crimson / Rose Red Accent */
+  --brand-accent-hover: #be123c;   /* Deep Red on Hover */
+  --brand-accent-light: #fff1f2;   /* Soft Red / Rose Tint Background */
+  --brand-accent-soft: #fb7185;    /* Medium Soft Red */
+  --brand-accent-dark: #9f1239;    /* Dark Crimson */
+  --brand-accent-ring: rgba(225, 29, 72, 0.35);
+  --brand-accent-shadow: rgba(225, 29, 72, 0.22);
+
+  --neu-bg: #eef2f6;
+  --neu-surface: #f0f4f8;
+  --neu-text: #4b5563;
+  --neu-dark: #1f2937;
+  --neu-muted: #9ca3af;
+  --neu-accent: var(--brand-accent);
+  --neu-accent-soft: var(--brand-accent-soft);
+  --neu-success: #10b981;
+  --neu-error: #ef4444;
+
+  --shadow-neu-flat: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --shadow-neu-small: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+  --shadow-neu-pressed: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+  --shadow-neu-accent-inset: inset 3px 3px 6px var(--brand-accent-shadow), inset -3px -3px 6px #ffffff;
+  --shadow-neu-success-inset: inset 3px 3px 6px rgba(16, 185, 129, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-float: 12px 12px 24px #cad4e2, -12px -12px 24px #ffffff;
+
+  /* Viscous Chocolate Dynamics */
+  --choc-ease: cubic-bezier(0.19, 1, 0.22, 1);
+  --choc-dip-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Iridescent Refraction Easings */
+  --cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --cubic-in: cubic-bezier(0.32, 0, 0.67, 0);
+  --cubic-out: cubic-bezier(0.33, 1, 0.68, 1);
+}
 
 @theme {
   --color-neu-bg: #eef2f6;
@@ -6,34 +48,36 @@
   --color-neu-text: #4b5563;
   --color-neu-dark: #1f2937;
   --color-neu-muted: #9ca3af;
-  --color-neu-accent: #6366f1;
-  --color-neu-accent-soft: #818cf8;
+  --color-neu-accent: var(--brand-accent);
+  --color-neu-accent-soft: var(--brand-accent-soft);
+  --color-neu-accent-light: var(--brand-accent-light);
   --color-neu-success: #10b981;
   --color-neu-error: #ef4444;
 
+  /* Master Brand Palette */
+  --color-brand: var(--brand-accent);
+  --color-brand-hover: var(--brand-accent-hover);
+  --color-brand-light: var(--brand-accent-light);
+  --color-brand-soft: var(--brand-accent-soft);
+  --color-brand-dark: var(--brand-accent-dark);
+
+  /* Mapped Indigo Aliases to Brand Accent for seamless single-variable color switching */
+  --color-indigo-50: var(--brand-accent-light);
+  --color-indigo-100: #ffe4e6;
+  --color-indigo-200: #fecdd3;
+  --color-indigo-300: #fda4af;
+  --color-indigo-400: #fb7185;
+  --color-indigo-500: var(--brand-accent-soft);
+  --color-indigo-600: var(--brand-accent);
+  --color-indigo-700: var(--brand-accent-hover);
+  --color-indigo-800: var(--brand-accent-dark);
+  --color-indigo-900: #881337;
+  --color-indigo-950: #4c0519;
+
   --shadow-neu-flat: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
   --shadow-neu-small: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
   --shadow-neu-pressed: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
-  --shadow-neu-accent-inset: inset 3px 3px 6px rgba(99, 102, 241, 0.25), inset -3px -3px 6px #ffffff;
-  --shadow-neu-success-inset: inset 3px 3px 6px rgba(16, 185, 129, 0.25), inset -3px -3px 6px #ffffff;
-  --shadow-neu-float: 12px 12px 24px #cad4e2, -12px -12px 24px #ffffff;
-}
-
-:root {
-  --neu-bg: #eef2f6;
-  --neu-surface: #f0f4f8;
-  --neu-text: #4b5563;
-  --neu-dark: #1f2937;
-  --neu-muted: #9ca3af;
-  --neu-accent: #6366f1;
-  --neu-accent-soft: #818cf8;
-  --neu-success: #10b981;
-  --neu-error: #ef4444;
-
-  --shadow-neu-flat: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
-  --shadow-neu-small: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
-  --shadow-neu-pressed: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
-  --shadow-neu-accent-inset: inset 3px 3px 6px rgba(99, 102, 241, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-accent-inset: inset 3px 3px 6px var(--brand-accent-shadow), inset -3px -3px 6px #ffffff;
   --shadow-neu-success-inset: inset 3px 3px 6px rgba(16, 185, 129, 0.25), inset -3px -3px 6px #ffffff;
   --shadow-neu-float: 12px 12px 24px #cad4e2, -12px -12px 24px #ffffff;
 }
@@ -45,40 +89,92 @@ body {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
-/* Custom Neumorphic Utility Classes */
+/* ==========================================================================
+   VISCOUS CHOCOLATE DIP & LIFT ANIMATION SYSTEM
+   Simulates buoyant objects emerging smoothly from a dense, cold chocolate base
+   ========================================================================== */
+
+/* Universal tactile transition for surfaces, non-circle buttons, and cards */
+.neu-flat,
+.neu-small,
+.neu-float,
+.chocolate-lift,
+button:not(.circle):not(.circle_black):not(:disabled) {
+  transition: transform 0.45s var(--choc-ease),
+              box-shadow 0.45s var(--choc-ease),
+              border-color 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+/* 1. Medium / Standard Cards (.neu-flat) */
 .neu-flat {
   background-color: var(--neu-bg);
   box-shadow: var(--shadow-neu-flat);
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+.neu-flat:hover,
+.chocolate-lift:hover {
+  transform: translateY(-5px) scale(1.012);
+  box-shadow: 14px 18px 30px #cad5e4, -14px -18px 30px #ffffff;
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 2. Compact Elements (.neu-small - buttons, tags, option tiles) */
 .neu-small {
   background-color: var(--neu-bg);
   box-shadow: var(--shadow-neu-small);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.neu-small:hover {
+  transform: translateY(-3px) scale(1.018);
+  box-shadow: 6px 9px 18px #cad5e4, -6px -9px 18px #ffffff;
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+/* 3. Hero & Float Cards (.neu-float) */
+.neu-float {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-float);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.neu-float:hover {
+  transform: translateY(-6px) scale(1.008);
+  box-shadow: 18px 24px 40px #c4d0df, -18px -24px 40px #ffffff;
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+/* 4. Active / Click State: Dips directly down into the dense chocolate */
+.neu-flat:active,
+.neu-small:active,
+.neu-float:active,
+.chocolate-lift:active,
+button:not(.circle):not(.circle_black):not(:disabled):active {
+  transform: translateY(2.5px) scale(0.978) !important;
+  box-shadow: inset 4px 5px 9px #d1d9e6, inset -4px -5px 9px #ffffff !important;
+  transition: transform 0.12s var(--choc-dip-ease),
+              box-shadow 0.12s ease !important;
+}
+
+/* Recessed Inset Elements (Inputs & active toggles) */
 .neu-pressed {
   background-color: var(--neu-bg);
   box-shadow: var(--shadow-neu-pressed);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .neu-accent-inset {
   background-color: var(--neu-bg);
   box-shadow: var(--shadow-neu-accent-inset);
-  border-color: rgba(99, 102, 241, 0.4);
+  border-color: var(--brand-accent-ring);
 }
 
 .neu-success-inset {
   background-color: var(--neu-bg);
   box-shadow: var(--shadow-neu-success-inset);
   border-color: rgba(16, 185, 129, 0.4);
-}
-
-.neu-float {
-  background-color: var(--neu-bg);
-  box-shadow: var(--shadow-neu-float);
-  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 /* Smooth custom scrollbars */
@@ -95,3 +191,303 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* ==========================================================================
+   BLURRED DUAL-SHADOW NEUMORPHIC BUTTON COMPONENT
+   Supports light (.circle) and dark (.circle_black), circular and elongated (.long)
+   Integrated with 7px shadow diffusion and 1.05 scale pillow-depth hover
+   ========================================================================== */
+
+.circle,
+.circle_black,
+div.circle,
+div.circle_black,
+button.circle,
+button.circle_black {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  isolation: isolate;
+  background-color: transparent;
+  transition: transform 0.3s ease-out, color 0.2s ease;
+}
+
+.circle,
+div.circle,
+button.circle {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.circle_black,
+div.circle_black,
+button.circle_black {
+  background-color: #131419;
+  color: #ffffff;
+}
+
+/* Pseudo-element with dual shadows and atmospheric blur */
+.circle::before,
+.circle_black::before,
+div.circle:before,
+div.circle_black:before,
+button.circle::before,
+button.circle_black::before {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  border-radius: inherit;
+  filter: blur(var(--neu-blur, 7px));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.circle::before,
+div.circle:before,
+button.circle::before {
+  background-color: #ffffff;
+  box-shadow:
+    8px 8px 20px #cbd5e1,
+    -8px -8px 20px #ffffff;
+}
+
+.circle_black::before,
+div.circle_black:before,
+button.circle_black::before {
+  background-color: #131419;
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.5),
+    -8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover States: Scale + Inset Pillow Crater */
+.circle:hover::before,
+div.circle:hover:before,
+button.circle:hover::before {
+  box-shadow:
+    8px 8px 20px #cbd5e1,
+    -8px -8px 20px #ffffff,
+    inset -8px -8px 20px #ffffff,
+    inset 8px 8px 20px #d1d5db;
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+}
+
+.circle_black:hover::before,
+div.circle_black:hover:before,
+button.circle_black:hover::before {
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.5),
+    -8px -8px 20px rgba(255, 255, 255, 0.2),
+    inset 8px 8px 20px rgba(0, 0, 0, 1),
+    inset -8px -8px 20px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+}
+
+/* Active State: Tactile Sunken Press */
+.circle:active::before,
+div.circle:active:before,
+button.circle:active::before {
+  box-shadow:
+    inset 8px 8px 18px #cbd5e1,
+    inset -8px -8px 18px #ffffff;
+  transform: scale(0.97);
+  transition: 0.1s ease-out;
+}
+
+.circle_black:active::before,
+div.circle_black:active:before,
+button.circle_black:active::before {
+  box-shadow:
+    inset 8px 8px 20px rgba(0, 0, 0, 1),
+    inset -8px -8px 20px rgba(255, 255, 255, 0.2);
+  transform: scale(0.97);
+  transition: 0.1s ease-out;
+}
+
+/* Text and content elements raised above the blurred pseudo-element */
+.circle p,
+.circle_black p,
+div.circle p,
+div.circle_black p,
+.circle .neu-btn-text,
+.circle_black .neu-btn-text,
+button.circle .neu-btn-text,
+button.circle_black .neu-btn-text {
+  position: relative;
+  z-index: 5;
+  user-select: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  pointer-events: none;
+  transition: transform 0.15s ease;
+}
+
+.circle:active p,
+.circle_black:active p,
+.circle:active .neu-btn-text,
+.circle_black:active .neu-btn-text,
+button.circle:active .neu-btn-text,
+button.circle_black:active .neu-btn-text {
+  transform: scale(0.97);
+}
+
+/* Focus Accessibility */
+button.circle:focus-visible,
+button.circle_black:focus-visible {
+  outline: 2px solid var(--brand-accent, #e11d48);
+  outline-offset: 4px;
+}
+
+/* ==========================================================================
+   RESPONSIVE SCALE VARIANTS
+   ========================================================================== */
+
+/* Elongated Pill (.long) */
+.circle.long,
+.circle_black.long,
+div.circle.long,
+div.circle_black.long,
+button.circle.long,
+button.circle_black.long {
+  border-radius: 9999px;
+}
+
+/* Fixed size demo mode (as defined in snippet) */
+.circle.demo-fixed,
+.circle_black.demo-fixed {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+.circle.demo-fixed.long,
+.circle_black.demo-fixed.long {
+  width: 250px;
+  height: 100px;
+}
+
+/* App Responsive Sizes */
+.btn-neu-sm {
+  font-size: 0.8125rem;
+  min-height: 2.375rem;
+  padding: 0.45rem 1.25rem;
+  --neu-blur: 4px;
+}
+
+.btn-neu-md {
+  font-size: 0.9375rem;
+  min-height: 2.875rem;
+  padding: 0.65rem 1.65rem;
+  --neu-blur: 6px;
+}
+
+.btn-neu-lg {
+  font-size: clamp(1rem, 1.25vw, 1.0625rem);
+  min-height: 3.375rem;
+  padding: 0.85rem 2.25rem;
+  --neu-blur: 7px;
+}
+
+.btn-neu-icon {
+  width: 2.875rem;
+  height: 2.875rem;
+  min-width: 2.875rem;
+  min-height: 2.875rem;
+  padding: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  --neu-blur: 5px;
+}
+
+/* Primary Variant: Pure crisp white with bold brand accent styling */
+.circle.circle-primary {
+  background-color: #ffffff;
+  color: var(--brand-accent, #e11d48);
+  font-weight: 700;
+}
+.circle.circle-primary::before {
+  background-color: #ffffff;
+  box-shadow:
+    8px 8px 20px #cbd5e1,
+    -8px -8px 20px #ffffff;
+}
+.circle.circle-primary:hover::before {
+  box-shadow:
+    8px 8px 22px var(--brand-accent-shadow, rgba(225, 29, 72, 0.22)),
+    -8px -8px 22px #ffffff,
+    inset -8px -8px 20px #ffffff,
+    inset 8px 8px 20px var(--brand-accent-light, #fff1f2);
+  transform: scale(1.05);
+}
+
+/* Danger Variant */
+.circle.circle-danger {
+  color: #ef4444;
+}
+.circle.circle-danger:hover::before {
+  box-shadow:
+    8px 8px 20px #a9a8b7,
+    -8px -8px 20px #fff,
+    inset -8px -8px 20px #fff,
+    inset 8px 8px 20px rgba(239, 68, 68, 0.25);
+}
+
+/* Pre-pressed Variant */
+.circle.circle-pressed {
+  color: var(--brand-accent, #e11d48);
+}
+.circle.circle-pressed::before {
+  box-shadow:
+    inset 6px 6px 14px #a9a8b7,
+    inset -6px -6px 14px #fff;
+}
+
+/* Ghost Variant */
+.circle.circle-ghost {
+  background-color: transparent;
+}
+.circle.circle-ghost::before {
+  background-color: transparent;
+  box-shadow: none;
+}
+.circle.circle-ghost:hover {
+  background-color: #e0e5ec;
+}
+.circle.circle-ghost:hover::before {
+  background-color: #e0e5ec;
+  box-shadow:
+    8px 8px 20px #a9a8b7,
+    -8px -8px 20px #fff,
+    inset -8px -8px 20px #fff,
+    inset 8px 8px 20px #a9a8b7;
+}
+
+/* Disabled State */
+button.circle:disabled,
+button.circle_black:disabled {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: grayscale(0.6);
+}
+
+

@@ -26,7 +26,7 @@ export const NeuProgressBar: React.FC<NeuProgressBarProps> = ({
       )}
       <div className="w-full h-3.5 neu-pressed rounded-full p-0.5 overflow-hidden border border-white/50">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-indigo-600 shadow-neu-small transition-all duration-500 ease-out"
+          className="h-full rounded-full bg-gradient-to-r from-rose-500 to-rose-600 shadow-neu-small transition-all duration-500 ease-out"
           style={{ width: `${percentage}%` }}
         />
       </div>

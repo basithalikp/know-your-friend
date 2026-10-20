@@ -1,9 +1,26 @@
+export type DiceBearStyle =
+  | 'fun-emoji'
+  | 'icons'
+  | 'notionists'
+  | 'lorelei'
+  | 'bottts'
+  | 'thumbs'
+  | 'shapes';
+
+export interface AvatarConfig {
+  style: DiceBearStyle;
+  seed: string;
+}
+
 export interface QuizQuestion {
   id: string;
   order_index: number;
   question_text: string;
   options: string[];
+  avatar?: AvatarConfig;
+  option_avatars?: AvatarConfig[];
   correct_option_index?: number; // Omitted when fetched by takers
+  remarks?: string | null;
 }
 
 export interface Quiz {
@@ -22,6 +39,7 @@ export interface AnswerItem {
   selected_index: number;
   is_correct?: boolean;
   correct_index?: number;
+  remarks?: string | null;
 }
 
 export interface QuizSubmission {
@@ -40,6 +58,10 @@ export interface StagedQuestion {
   id: string;
   question_text: string;
   options: string[];
+  avatar?: AvatarConfig;
+  option_avatars?: AvatarConfig[];
   correct_option_index: number;
   suggested_category?: string;
+  remarks?: string;
 }
+

@@ -38,7 +38,7 @@ export default function LeaderboardClient({ slug }: { slug: string }) {
     return (
       <div className="min-h-screen bg-neu-bg flex items-center justify-center">
         <div className="neu-flat rounded-3xl p-8 animate-pulse flex flex-col items-center gap-3">
-          <Trophy className="w-8 h-8 text-indigo-400" />
+          <Trophy className="w-8 h-8 text-rose-400" />
           <div className="h-4 w-32 bg-gray-200 rounded" />
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function LeaderboardClient({ slug }: { slug: string }) {
       <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-8 space-y-6">
         {/* Header */}
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center gap-1.5 neu-small px-3 py-1 rounded-full text-xs font-bold text-indigo-600 mb-1">
+          <div className="inline-flex items-center gap-1.5 neu-small px-3 py-1 rounded-full text-xs font-bold text-rose-600 mb-1">
             <Trophy className="w-3.5 h-3.5" />
             <span>Official Scoreboard</span>
           </div>

@@ -14,7 +14,7 @@ export const NeuBadge: React.FC<NeuBadgeProps> = ({
 }) => {
   const variantStyles = {
     default: 'neu-small text-gray-700 border border-white/60',
-    accent: 'bg-indigo-50/80 text-indigo-700 border border-indigo-200/50 shadow-sm',
+    accent: 'bg-rose-50/80 text-rose-700 border border-rose-200/50 shadow-sm',
     success: 'bg-emerald-50/80 text-emerald-700 border border-emerald-200/50 shadow-sm',
     warning: 'bg-amber-50/80 text-amber-700 border border-amber-200/50 shadow-sm',
     pressed: 'neu-pressed text-gray-600',

@@ -6,6 +6,7 @@ import { Navbar } from '@/components/shared/Navbar';
 import { NeuCard } from '@/components/neumorphic/NeuCard';
 import { NeuButton } from '@/components/neumorphic/NeuButton';
 import { NeuInput } from '@/components/neumorphic/NeuInput';
+import { AuthModal } from '@/components/auth/AuthModal';
 import { QuizStepper } from '@/components/quiz/QuizStepper';
 import { ScoreCelebration } from '@/components/quiz/ScoreCelebration';
 import { AnswersBreakdown } from '@/components/quiz/AnswersBreakdown';
@@ -15,7 +16,7 @@ import { submitQuizAttempt } from '@/actions/submitQuiz';
 import { getLeaderboard } from '@/actions/getLeaderboard';
 import { createClient } from '@/lib/supabase/client';
 import { Quiz, QuizSubmission, AnswerItem } from '@/types/quiz';
-import { Sparkles, ShieldAlert, PlusCircle, ArrowRight, UserCheck } from 'lucide-react';
+import { Sparkles, ShieldAlert, PlusCircle, ArrowRight, UserCheck, LogIn } from 'lucide-react';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
 
 export default function TakeQuizClient({ slug }: { slug: string }) {
@@ -23,9 +24,10 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // User state
+  // User & Auth modal state
   const [user, setUser] = useState<SupabaseUser | null>(null);
   const [takerName, setTakerName] = useState('');
+  const [authModalOpen, setAuthModalOpen] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -58,7 +60,8 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
 
         if (currentUser) {
           setUser(currentUser);
-          setTakerName(currentUser.user_metadata?.full_name || 'Friend');
+          const name = currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Friend';
+          setTakerName(name);
 
           // Check if already attempted
           const { data: existingSub } = await supabase
@@ -85,23 +88,9 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
     loadQuizData();
   }, [slug]);
 
-  const handleGoogleSignIn = async () => {
-    const supabase = createClient();
-    if (supabase) {
-      await supabase.auth.signInWithOAuth({
-        provider: 'google',
-        options: {
-          redirectTo: window.location.href,
-        },
-      });
-    } else {
-      alert('Supabase credentials not configured in .env.local yet. You can enter your name below to play!');
-    }
-  };
-
   const handleStartQuiz = () => {
     if (!takerName.trim()) {
-      alert('Please enter your name or sign in with Google to start!');
+      alert('Please enter your name or sign in to start!');
       return;
     }
     setHasStarted(true);
@@ -141,7 +130,7 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
     return (
       <div className="min-h-screen bg-neu-bg flex flex-col items-center justify-center p-6">
         <div className="neu-flat rounded-3xl p-8 flex flex-col items-center gap-4 animate-pulse">
-          <div className="w-12 h-12 rounded-2xl bg-indigo-200" />
+          <div className="w-12 h-12 rounded-2xl bg-rose-200" />
           <div className="h-4 w-40 bg-gray-300 rounded" />
           <div className="h-3 w-24 bg-gray-200 rounded" />
         </div>
@@ -211,12 +200,12 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
         ) : !hasStarted ? (
           /* State B: Pre-Quiz Gatekeeper (Auth / Identity + Single Attempt Warning) */
           <NeuCard variant="float" className="p-8 sm:p-12 text-center space-y-6">
-            <div className="w-16 h-16 mx-auto rounded-3xl bg-indigo-50 neu-small flex items-center justify-center text-indigo-600 border border-white">
+            <div className="w-16 h-16 mx-auto rounded-3xl bg-rose-50 neu-small flex items-center justify-center text-rose-600 border border-white">
               <Sparkles className="w-8 h-8" />
             </div>
 
             <div className="space-y-2">
-              <span className="neu-small px-3 py-1 rounded-full text-xs font-bold text-indigo-600">
+              <span className="neu-small px-3 py-1 rounded-full text-xs font-bold text-rose-600">
                 One-Attempt Friend Challenge
               </span>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
@@ -224,7 +213,7 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
               </h1>
               <p className="text-sm text-gray-600 max-w-md mx-auto">
                 <strong className="text-gray-800">{quiz.creator_name}</strong> created this quiz to test your friendship. You only get{' '}
-                <strong className="text-indigo-600">ONE single attempt</strong>!
+                <strong className="text-rose-600">ONE single attempt</strong>!
               </p>
             </div>
 
@@ -240,8 +229,8 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
                       className="w-10 h-10 rounded-xl object-cover border border-white"
                     />
                   ) : (
-                    <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold">
-                      {takerName.charAt(0)}
+                    <div className="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold">
+                      {takerName.charAt(0).toUpperCase()}
                     </div>
                   )}
                   <div className="text-left min-w-0">
@@ -254,38 +243,21 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
                 <div className="space-y-3">
                   <NeuButton
                     variant="default"
-                    onClick={handleGoogleSignIn}
+                    onClick={() => setAuthModalOpen(true)}
                     className="w-full text-xs font-semibold py-3.5"
                   >
-                    <svg className="w-4 h-4" viewBox="0 0 24 24">
-                      <path
-                        fill="#4285F4"
-                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                      />
-                      <path
-                        fill="#34A853"
-                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                      />
-                      <path
-                        fill="#FBBC05"
-                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
-                      />
-                      <path
-                        fill="#EA4335"
-                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
-                      />
-                    </svg>
-                    <span>Sign In with Google to Claim Attempt</span>
+                    <LogIn className="w-4 h-4 text-rose-600" />
+                    <span>Sign In / Sign Up with Email</span>
                   </NeuButton>
 
                   <div className="flex items-center gap-2 my-2">
                     <div className="h-px bg-gray-300 flex-1" />
-                    <span className="text-[11px] font-bold text-gray-400 uppercase">Or play with name</span>
+                    <span className="text-[11px] font-bold text-gray-400 uppercase">Or play with nickname</span>
                     <div className="h-px bg-gray-300 flex-1" />
                   </div>
 
                   <NeuInput
-                    placeholder="Enter your name..."
+                    placeholder="Enter your name or nickname..."
                     value={takerName}
                     onChange={(e) => setTakerName(e.target.value)}
                   />
@@ -316,6 +288,22 @@ export default function TakeQuizClient({ slug }: { slug: string }) {
           </div>
         )}
       </main>
+
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        onSuccess={() => {
+          const supabase = createClient();
+          if (supabase) {
+            supabase.auth.getUser().then(({ data }) => {
+              if (data.user) {
+                setUser(data.user);
+                setTakerName(data.user.user_metadata?.full_name || data.user.email?.split('@')[0] || 'Friend');
+              }
+            });
+          }
+        }}
+      />
     </div>
   );
 }

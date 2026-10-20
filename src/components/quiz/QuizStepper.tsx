@@ -5,6 +5,7 @@ import { NeuCard } from '@/components/neumorphic/NeuCard';
 import { NeuButton } from '@/components/neumorphic/NeuButton';
 import { NeuRadioOption } from '@/components/neumorphic/NeuRadioOption';
 import { NeuProgressBar } from '@/components/neumorphic/NeuProgressBar';
+import { NeuAvatar } from '@/components/neumorphic/NeuAvatar';
 import { QuizQuestion } from '@/types/quiz';
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';
 
@@ -63,9 +64,9 @@ export const QuizStepper: React.FC<QuizStepperProps> = ({
       <NeuProgressBar current={currentIndex + 1} total={total} />
 
       {/* Main Question Card */}
-      <NeuCard variant="float" className="relative p-6 sm:p-10 space-y-6">
+      <NeuCard variant="float" className="relative p-6 sm:p-10 space-y-8">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 neu-small px-3 py-1 rounded-xl">
+          <span className="text-xs font-bold uppercase tracking-wider text-rose-600 neu-small px-3 py-1 rounded-xl">
             {creatorName}&apos;s Challenge
           </span>
           <span className="text-xs font-semibold text-gray-400">
@@ -73,18 +74,37 @@ export const QuizStepper: React.FC<QuizStepperProps> = ({
           </span>
         </div>
 
+        {/* Large Question Avatar Showcase Card */}
+        {currentQuestion.avatar && (
+          <div className="flex flex-col items-center justify-center pt-2 pb-1">
+            <div className="p-3 sm:p-4 rounded-3xl neu-pressed bg-slate-100/60 border border-white/60 shadow-inner flex flex-col items-center">
+              <NeuAvatar
+                avatar={currentQuestion.avatar}
+                size="2xl"
+                variant="float"
+                className="shadow-lg"
+              />
+              <span className="mt-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                {currentQuestion.avatar.style} &bull; {currentQuestion.avatar.seed}
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* Question Text */}
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug tracking-tight">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-gray-900 leading-snug tracking-tight text-center">
           {currentQuestion.question_text}
         </h2>
 
-        {/* 4 Choices */}
-        <div className="space-y-3 pt-2">
+        {/* 4 Choices Grid (Large Option Cards) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
           {currentQuestion.options.map((optionText, idx) => (
             <NeuRadioOption
               key={idx}
               index={idx}
               label={optionText}
+              avatar={currentQuestion.option_avatars?.[idx]}
+              layout="card"
               isSelected={currentSelection === idx}
               onClick={() => handleSelect(idx)}
             />

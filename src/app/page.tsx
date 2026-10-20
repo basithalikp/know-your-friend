@@ -9,10 +9,7 @@ import {
   Trophy,
   Zap,
   ArrowRight,
-  Heart,
-  HelpCircle,
   Play,
-  Users,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -22,21 +19,21 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 sm:pt-20 text-center space-y-8">
-        <div className="inline-flex items-center gap-2 neu-small px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold text-indigo-700 border border-white/80">
-          <Sparkles className="w-4 h-4 text-indigo-500 animate-pulse" />
-          <span>Powered by Google Gemini 2.5 & Supabase</span>
+        <div className="inline-flex items-center gap-2 neu-small px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold text-rose-700 border border-white/80 cursor-default select-none">
+          <Sparkles className="w-4 h-4 text-rose-500 animate-pulse" />
+          <span>AI-Powered Friendship Quiz</span>
         </div>
 
         <div className="space-y-4 max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-6xl font-black text-gray-900 tracking-tight leading-tight">
             How Well Do Your Friends{' '}
-            <span className="bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-rose-600 to-rose-500 bg-clip-text text-transparent">
               Really Know You?
             </span>
           </h1>
           <p className="text-base sm:text-xl text-gray-600 font-normal max-w-2xl mx-auto leading-relaxed">
             Generate personalized, witty trivia questions about your habits, food cravings, and quirks in seconds. Challenge your friends to a strictly{' '}
-            <span className="text-gray-900 font-bold underline decoration-indigo-400">one-attempt</span> showdown.
+            <span className="text-gray-900 font-bold underline decoration-rose-400">one-attempt</span> showdown.
           </p>
         </div>
 
@@ -52,7 +49,7 @@ export default function HomePage() {
 
           <Link href="/q/alex-trivia-demo" className="w-full sm:w-auto">
             <NeuButton variant="default" size="lg" className="w-full sm:w-auto text-base">
-              <Play className="w-4 h-4 text-indigo-600" />
+              <Play className="w-4 h-4 text-rose-600" />
               <span>Play Demo Quiz</span>
             </NeuButton>
           </Link>
@@ -63,7 +60,7 @@ export default function HomePage() {
           <NeuCard variant="float" className="text-left p-6 sm:p-8 space-y-5 border border-white/90">
             <div className="flex items-center justify-between pb-3 border-b border-gray-200/50">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                <div className="w-8 h-8 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold text-xs shadow-sm">
                   AI
                 </div>
                 <div>
@@ -79,21 +76,21 @@ export default function HomePage() {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between">
+              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between cursor-pointer">
                 <span>A. Extra-cheesy deep dish pizza</span>
                 <span className="w-4 h-4 rounded-full neu-pressed" />
               </div>
-              <div className="neu-accent-inset rounded-2xl p-4 text-xs sm:text-sm font-bold text-indigo-700 flex items-center justify-between border border-indigo-300">
-                <span>B. Spicy ramen with extra egg</span>
-                <span className="w-4 h-4 rounded-full bg-indigo-600 flex items-center justify-center text-white text-[10px]">
+              <div className="neu-accent-inset rounded-2xl p-4 text-xs sm:text-sm font-bold text-rose-700 flex items-center justify-between border border-rose-300 cursor-pointer">
+                <span>B. Spicy tonkotsu ramen with egg</span>
+                <span className="w-4 h-4 rounded-full bg-rose-600 flex items-center justify-center text-white text-[10px]">
                   ✓
                 </span>
               </div>
-              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between">
+              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between cursor-pointer">
                 <span>C. Late-night street tacos</span>
                 <span className="w-4 h-4 rounded-full neu-pressed" />
               </div>
-              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between">
+              <div className="neu-small rounded-2xl p-4 text-xs sm:text-sm font-semibold text-gray-700 flex items-center justify-between cursor-pointer">
                 <span>D. Double bacon cheeseburger</span>
                 <span className="w-4 h-4 rounded-full neu-pressed" />
               </div>
@@ -115,29 +112,29 @@ export default function HomePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 */}
-          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4 hover:shadow-neu-float transition-all">
-            <div className="w-12 h-12 rounded-2xl bg-indigo-50 neu-small flex items-center justify-center text-indigo-600">
+          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4">
+            <div className="w-12 h-12 rounded-2xl bg-rose-50 neu-small flex items-center justify-center text-rose-600">
               <Zap className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-bold text-gray-900">Gemini 2.5 Flash Engine</h3>
+            <h3 className="text-lg font-bold text-gray-900">Adaptive AI Engine</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Generate questions about quirks, travel pet peeves, and emergency reactions with instant JSON schema precision.
+              Generate questions about quirks, travel pet peeves, and emergency reactions with instant precision.
             </p>
           </NeuCard>
 
           {/* Card 2 */}
-          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4 hover:shadow-neu-float transition-all">
+          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 neu-small flex items-center justify-center text-emerald-600">
               <ShieldCheck className="w-6 h-6" />
             </div>
             <h3 className="text-lg font-bold text-gray-900">Single-Attempt Anti-Cheat</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Answers are kept server-side only. Google Auth + DB unique constraint ensures each friend gets exactly ONE shot.
+              Answers are kept server-side only. Secure verification ensures each friend gets exactly ONE shot.
             </p>
           </NeuCard>
 
           {/* Card 3 */}
-          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4 hover:shadow-neu-float transition-all">
+          <NeuCard variant="flat" className="p-6 sm:p-8 space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-amber-50 neu-small flex items-center justify-center text-amber-600">
               <Trophy className="w-6 h-6" />
             </div>

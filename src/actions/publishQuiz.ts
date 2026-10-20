@@ -57,6 +57,7 @@ export async function publishQuiz(input: PublishQuizInput) {
           question_text: q.question_text,
           options: q.options,
           correct_option_index: q.correct_option_index,
+          remarks: q.remarks || null,
         }));
 
         const { error: questionsError } = await supabase
@@ -85,7 +86,10 @@ export async function publishQuiz(input: PublishQuizInput) {
         order_index: idx,
         question_text: q.question_text,
         options: q.options,
+        avatar: q.avatar,
+        option_avatars: q.option_avatars,
         correct_option_index: q.correct_option_index,
+        remarks: q.remarks || null,
       })),
     });
 

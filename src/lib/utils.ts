@@ -27,7 +27,7 @@ export function getFriendshipTier(score: number, total: number) {
       title: 'Soulmate Status',
       emoji: '🔮',
       desc: 'You know them better than they know themselves! Unbelievable accuracy.',
-      color: 'text-indigo-600',
+      color: 'text-rose-600',
     };
   } else if (percentage >= 80) {
     return {
@@ -41,7 +41,7 @@ export function getFriendshipTier(score: number, total: number) {
       title: 'Inner Circle Homie',
       emoji: '✨',
       desc: 'Solid connection! You definitely hang out and pay attention.',
-      color: 'text-blue-600',
+      color: 'text-rose-500',
     };
   } else if (percentage >= 40) {
     return {

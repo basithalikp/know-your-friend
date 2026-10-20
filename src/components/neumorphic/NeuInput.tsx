@@ -28,7 +28,7 @@ export const NeuInput = React.forwardRef<HTMLInputElement, NeuInputProps>(
             id={inputId}
             ref={ref}
             className={cn(
-              'neu-pressed w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base text-gray-800 placeholder:text-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-indigo-400/40 border border-transparent focus:border-indigo-300/30',
+              'neu-pressed w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base text-gray-800 placeholder:text-gray-400 outline-none transition-all duration-200 focus:ring-2 focus:ring-rose-400/40 border border-transparent focus:border-rose-300/30',
               icon && 'pl-11',
               error && 'ring-2 ring-rose-400/50 border-rose-300',
               className

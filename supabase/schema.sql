@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS public.quiz_questions (
   question_text TEXT NOT NULL,
   options JSONB NOT NULL, -- Array: ["A", "B", "C", "D"]
   correct_option_index INT NOT NULL CHECK (correct_option_index >= 0 AND correct_option_index <= 3),
+  remarks TEXT, -- Creator commentary / explanation shown after quiz
   created_at TIMESTAMPTZ DEFAULT now()
 );
 

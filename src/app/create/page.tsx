@@ -116,7 +116,7 @@ export default function CreateQuizPage() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 pt-8 space-y-8">
         {/* Header Hero */}
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center gap-1.5 neu-small px-3 py-1 rounded-full text-xs font-bold text-indigo-600 mb-2">
+          <div className="inline-flex items-center gap-1.5 neu-small px-3 py-1 rounded-full text-xs font-bold text-rose-600 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>AI Quiz Studio</span>
           </div>
@@ -124,14 +124,14 @@ export default function CreateQuizPage() {
             Create Your Friend Challenge
           </h1>
           <p className="text-sm sm:text-base text-gray-600 max-w-lg mx-auto">
-            Use Gemini AI to generate personal trivia questions, designate your true answers, and share a 1-attempt challenge with your friends!
+            Use AI to generate personal trivia questions, designate your true answers, and share a 1-attempt challenge with your friends!
           </p>
         </div>
 
         {/* Step 1: Creator Details */}
         <NeuCard variant="flat" className="space-y-4">
           <h2 className="text-base font-bold text-gray-800 flex items-center gap-2">
-            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs font-bold shadow-sm">
+            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-rose-600 text-white text-xs font-bold shadow-sm">
               1
             </span>
             <span>Your Info & Quiz Title</span>
@@ -156,7 +156,7 @@ export default function CreateQuizPage() {
         {/* Step 2: AI Question Generator */}
         <div className="space-y-3">
           <h2 className="text-base font-bold text-gray-800 flex items-center gap-2 px-1">
-            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs font-bold shadow-sm">
+            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-rose-600 text-white text-xs font-bold shadow-sm">
               2
             </span>
             <span>Generate & Review Questions</span>
@@ -172,7 +172,7 @@ export default function CreateQuizPage() {
         {/* Step 3: Staged Questions Review */}
         <div className="space-y-3">
           <h2 className="text-base font-bold text-gray-800 flex items-center gap-2 px-1">
-            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-indigo-600 text-white text-xs font-bold shadow-sm">
+            <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-rose-600 text-white text-xs font-bold shadow-sm">
               3
             </span>
             <span>Quiz Review ({questions.length} Staged)</span>

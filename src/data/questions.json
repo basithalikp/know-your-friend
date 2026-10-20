@@ -1,0 +1,552 @@
+[
+  {
+    "id": "fb-01",
+    "category": "facts",
+    "question": "Did you know which bizarre phobia or irrational fear I actually have?",
+    "options": [
+      "Deep ocean water (thalassophobia)",
+      "Heights / glass floors",
+      "Clowns or costumed mascots",
+      "Spiders and creepy crawlies"
+    ]
+  },
+  {
+    "id": "fb-02",
+    "category": "nostalgia",
+    "question": "Do you know what my very first childhood dream job was?",
+    "options": [
+      "Astronaut / space explorer",
+      "Doctor or veterinarian",
+      "Famous actor or rockstar",
+      "Pilot or train driver"
+    ]
+  },
+  {
+    "id": "fb-03",
+    "category": "food",
+    "question": "Did you know which popular food ingredient I secretly can't stand?",
+    "options": [
+      "Cilantro / coriander",
+      "Raw onions",
+      "Mushrooms",
+      "Mayonnaise"
+    ]
+  },
+  {
+    "id": "fb-04",
+    "category": "quirks",
+    "question": "Do you know which odd habit I do every single night before sleeping?",
+    "options": [
+      "Check that my alarms are set at least 3 times",
+      "Sleep with background white noise or a podcast",
+      "Ensure all closet doors and blinds are 100% shut",
+      "Drink a tall glass of ice-cold water"
+    ]
+  },
+  {
+    "id": "fb-05",
+    "category": "childhood",
+    "question": "Did you know what instrument or lesson my parents forced me to take as a kid?",
+    "options": [
+      "Classical piano lessons",
+      "Violin or guitar classes",
+      "Swimming / gymnastics team",
+      "Martial arts (Karate / Taekwondo)"
+    ]
+  },
+  {
+    "id": "fb-06",
+    "category": "facts",
+    "question": "Do you know what my birth order or sibling status is?",
+    "options": [
+      "The responsible oldest child",
+      "The overlooked middle child",
+      "The spoiled youngest sibling",
+      "An only child"
+    ]
+  },
+  {
+    "id": "fb-07",
+    "category": "entertainment",
+    "question": "Did you know which animated show or cartoon movie I still secretly watch for comfort?",
+    "options": [
+      "SpongeBob SquarePants",
+      "Classic Disney or Pixar films",
+      "Avatar: The Last Airbender",
+      "Studio Ghibli movies"
+    ]
+  },
+  {
+    "id": "fb-08",
+    "category": "hobbies",
+    "question": "Do you know which hidden or unexpected talent I actually have?",
+    "options": [
+      "I can whistle like a songbird",
+      "I am surprisingly good at cooking without a recipe",
+      "I can juggle / do minor magic tricks",
+      "I have near-photographic memory for song lyrics"
+    ]
+  },
+  {
+    "id": "fb-09",
+    "category": "romance",
+    "question": "Did you know how old I was when I had my very first crush?",
+    "options": [
+      "In kindergarten / early primary school",
+      "Around middle school (ages 11–13)",
+      "High school (age 15+)",
+      "I was a late bloomer in college"
+    ]
+  },
+  {
+    "id": "fb-10",
+    "category": "quirks",
+    "question": "Do you know which of these everyday tasks I procrastinate on the longest?",
+    "options": [
+      "Folding and putting away laundry",
+      "Responding to unread text messages",
+      "Scheduling medical or dentist appointments",
+      "Washing dishes right after cooking"
+    ]
+  },
+  {
+    "id": "fb-11",
+    "category": "food",
+    "question": "Did you know what my definitive guilty pleasure snack is?",
+    "options": [
+      "Instant noodles with extra cheese / toppings",
+      "Late-night drive-thru french fries",
+      "An entire pack of sweet cookies in one sitting",
+      "Salty potato chips with dips"
+    ]
+  },
+  {
+    "id": "fb-12",
+    "category": "travel",
+    "question": "Do you know which travel destination is sitting at the very top of my bucket list?",
+    "options": [
+      "Japan (Tokyo, Kyoto & street food)",
+      "Iceland (Northern Lights & hot springs)",
+      "Italy or Greece (coastal history & cuisine)",
+      "Switzerland (mountain trains & scenery)"
+    ]
+  },
+  {
+    "id": "fb-13",
+    "category": "lifestyle",
+    "question": "Did you know what time of day my brain is actually operating at peak performance?",
+    "options": [
+      "Crisp and early in the morning (6 AM – 9 AM)",
+      "Midday after caffeine hits (11 AM – 2 PM)",
+      "Golden hour evening (5 PM – 8 PM)",
+      "Late at night when everyone is asleep (midnight+)"
+    ]
+  },
+  {
+    "id": "fb-14",
+    "category": "entertainment",
+    "question": "Do you know which artist or band was my top played on Spotify / Apple Music last year?",
+    "options": [
+      "A mainstream pop star (Taylor Swift, Olivia Rodrigo, The Weeknd)",
+      "An indie / alternative acoustic band",
+      "A hip-hop / rap icon (Drake, Kendrick Lamar)",
+      "Classic throwback 80s/90s rock legends"
+    ]
+  },
+  {
+    "id": "fb-15",
+    "category": "facts",
+    "question": "Did you know how I actually react in high-stress emergencies?",
+    "options": [
+      "Surprisingly calm and take charge immediately",
+      "Panic internally while maintaining a blank face",
+      "Vocal freak-out first, followed by rapid problem-solving",
+      "Look around for someone else to tell me what to do"
+    ]
+  },
+  {
+    "id": "fb-16",
+    "category": "nostalgia",
+    "question": "Do you know what ridiculous fashion trend or phase I fully committed to in school?",
+    "options": [
+      "Skinny jeans with neon skater shoes",
+      "An emo / all-black alternative phase",
+      "Oversized jerseys or baggy hoodies every day",
+      "Preppy polo shirts with popped collars"
+    ]
+  },
+  {
+    "id": "fb-17",
+    "category": "habits",
+    "question": "Did you know how many unread emails or notifications are sitting on my phone?",
+    "options": [
+      "Clean inbox zero — unread badges bother me",
+      "Between 10 and 50 unread messages",
+      "A few hundred notifications",
+      "Thousands of unread emails that I've given up on"
+    ]
+  },
+  {
+    "id": "fb-18",
+    "category": "food",
+    "question": "Do you know what my spice tolerance is in reality?",
+    "options": [
+      "Zero tolerance — even black pepper is spicy",
+      "Mild to medium — I like flavor, not pain",
+      "Pretty high — bring on the jalapeños and chili oil",
+      "Extreme — I actively seek out the hottest hot sauces"
+    ]
+  },
+  {
+    "id": "fb-19",
+    "category": "romance",
+    "question": "Did you know what my biggest immediate pet peeve is on a date?",
+    "options": [
+      "Checking their phone every 5 minutes",
+      "Being rude or dismissive to the waitstaff",
+      "Talking about themselves without asking a single question",
+      "Showing up significantly late without a warning"
+    ]
+  },
+  {
+    "id": "fb-20",
+    "category": "facts",
+    "question": "Do you know which injury or medical story from my past was the most ridiculous?",
+    "options": [
+      "Broke a bone doing something utterly clumsy at home",
+      "Ended up in urgent care over a sports mishap",
+      "Got stitches from a bizarre childhood accident",
+      "I've never broken a single bone in my life"
+    ]
+  },
+  {
+    "id": "fb-21",
+    "category": "entertainment",
+    "question": "Did you know which movie makes me cry without fail every single time?",
+    "options": [
+      "A heart-wrenching animated film (Coco, Up)",
+      "A tragic romance (The Notebook, Titanic, La La Land)",
+      "Any film where an animal / dog dies (Marley & Me)",
+      "I have never cried during a movie in my life"
+    ]
+  },
+  {
+    "id": "fb-22",
+    "category": "social",
+    "question": "Do you know what my social battery limit is at big social gatherings?",
+    "options": [
+      "Extinguished after 1 to 2 hours max",
+      "Lasts around 3 to 4 hours before I quiet down",
+      "I can stay out all night as long as the vibes are good",
+      "Depends entirely on whether my best friend is next to me"
+    ]
+  },
+  {
+    "id": "fb-23",
+    "category": "quirks",
+    "question": "Did you know what kind of shopping purchase I feel the most guilty about?",
+    "options": [
+      "Ordering takeout delivery when I have food in the fridge",
+      "Buying clothes that I wear only once",
+      "Random impulse gadgets bought late at night online",
+      "Expensive coffee or bubble tea every afternoon"
+    ]
+  },
+  {
+    "id": "fb-24",
+    "category": "childhood",
+    "question": "Do you know what my favorite subject in school actually was?",
+    "options": [
+      "English literature or creative writing",
+      "Math or science / biology",
+      "History or social studies",
+      "Art, drama, or physical education"
+    ]
+  },
+  {
+    "id": "fb-25",
+    "category": "lifestyle",
+    "question": "Did you know what my real weekend wake-up routine looks like?",
+    "options": [
+      "Up early by 8 AM enjoying coffee and peace",
+      "Scroll on my phone in bed for an hour before moving",
+      "Sleep straight past 11 AM if nobody wakes me",
+      "Immediately jump out of bed to run errands"
+    ]
+  },
+  {
+    "id": "fb-26",
+    "category": "hobbies",
+    "question": "Do you know which board game or video game I get way too competitive playing?",
+    "options": [
+      "Monopoly or Catan",
+      "Mario Kart or Super Smash Bros",
+      "Trivia / pub quiz games",
+      "Card games (Uno, Poker, Exploding Kittens)"
+    ]
+  },
+  {
+    "id": "fb-27",
+    "category": "facts",
+    "question": "Did you know whether I can drive a manual transmission stick-shift car?",
+    "options": [
+      "Yes, I drive stick effortlessly",
+      "I learned once, but I'd stall 5 times now",
+      "No, automatic only for me",
+      "I don't even like driving in general"
+    ]
+  },
+  {
+    "id": "fb-28",
+    "category": "food",
+    "question": "Do you know my exact drink of choice when hanging out with friends?",
+    "options": [
+      "A crisp cold beer or cider",
+      "A fruity cocktail or gin & tonic",
+      "Iced soda, sparkling water, or iced tea",
+      "Just water — I'm the designated driver"
+    ]
+  },
+  {
+    "id": "fb-29",
+    "category": "quirks",
+    "question": "Did you know how I organise my closet / wardrobe?",
+    "options": [
+      "Color-coded and neatly hung on matching hangers",
+      "Roughly separated into tops and bottoms",
+      "The 'clean clothes chair' holds half my wardrobe",
+      "Everything folded neatly in Marie Kondo style"
+    ]
+  },
+  {
+    "id": "fb-30",
+    "category": "entertainment",
+    "question": "Do you know which video game franchise I have sunk the most lifetime hours into?",
+    "options": [
+      "Pokemon / Nintendo franchises",
+      "Minecraft or Roblox",
+      "Grand Theft Auto or Call of Duty",
+      "The Sims / Stardew Valley / cozy simulators"
+    ]
+  },
+  {
+    "id": "fb-31",
+    "category": "nostalgia",
+    "question": "Did you know what my favorite childhood snack or candy was?",
+    "options": [
+      "Sour gummy candies",
+      "Chocolate bars or peanut butter cups",
+      "Popsicles / ice cream sandwiches",
+      "Salty crackers or cheesy chips"
+    ]
+  },
+  {
+    "id": "fb-32",
+    "category": "travel",
+    "question": "Do you know which packing mistake I make on almost every trip?",
+    "options": [
+      "Packing 5 extra pairs of socks and underwear I never use",
+      "Forgetting a phone charger or adapter",
+      "Overpacking clothes and struggling to zip the suitcase",
+      "Forgetting essential toiletries like toothpaste or brush"
+    ]
+  },
+  {
+    "id": "fb-33",
+    "category": "facts",
+    "question": "Did you know what my natural reaction to receiving a phone call is?",
+    "options": [
+      "Stare at the screen until it stops ringing, then text",
+      "Answer immediately with zero hesitation",
+      "Assume it's an emergency if someone is calling directly",
+      "Decline it immediately and ask 'what's up?' via text"
+    ]
+  },
+  {
+    "id": "fb-34",
+    "category": "romance",
+    "question": "Do you know how I define the ultimate romantic gesture?",
+    "options": [
+      "Surprise flowers or a handwritten letter",
+      "Remembering a tiny detail I mentioned weeks ago",
+      "Planning an entire date night without asking me to decide",
+      "Cooking a delicious homemade meal for two"
+    ]
+  },
+  {
+    "id": "fb-35",
+    "category": "lifestyle",
+    "question": "Did you know how I prefer to commute or get around town?",
+    "options": [
+      "Driving my own car listening to loud music",
+      "Walking with headphones on if it's under 30 minutes",
+      "Public transit (metro / bus) so I can read or scroll",
+      "Calling a ride-share (Uber / taxi) whenever possible"
+    ]
+  },
+  {
+    "id": "fb-36",
+    "category": "hobbies",
+    "question": "Do you know what creative hobby I would master if money and time were no object?",
+    "options": [
+      "Photography and cinematography",
+      "Pottery and ceramic sculpting",
+      "Playing piano or electric guitar like a virtuoso",
+      "Writing and publishing a bestselling novel"
+    ]
+  },
+  {
+    "id": "fb-37",
+    "category": "facts",
+    "question": "Did you know which temperature setting I prefer for my room?",
+    "options": [
+      "Freezing cold like a walk-in freezer with heavy blankets",
+      "Cool and breezy with fresh air",
+      "Comfortably warm / room temperature",
+      "Hot and cozy with zero fans blowing"
+    ]
+  },
+  {
+    "id": "fb-38",
+    "category": "quirks",
+    "question": "Do you know what I do when a song I love comes on in the car?",
+    "options": [
+      "Sing every single lyric at the top of my lungs",
+      "Turn the volume all the way up and tap the steering wheel",
+      "Quietly mouth the words and vibe internally",
+      "Force whoever is with me to be quiet and listen to the bridge"
+    ]
+  },
+  {
+    "id": "fb-39",
+    "category": "entertainment",
+    "question": "Did you know which TV series I have rewatched from start to finish multiple times?",
+    "options": [
+      "The Office / Parks and Recreation",
+      "Friends / How I Met Your Mother",
+      "Breaking Bad / Better Call Saul",
+      "Brooklyn Nine-Nine / Modern Family"
+    ]
+  },
+  {
+    "id": "fb-40",
+    "category": "social",
+    "question": "Do you know what my signature style of saying goodbye at gatherings is?",
+    "options": [
+      "The Irish exit — vanishing quietly without announcing it",
+      "A 45-minute goodbye where I talk to 10 more people",
+      "A quick general wave to the room and out the door",
+      "Individual hugs and personal goodbyes for every single person"
+    ]
+  },
+  {
+    "id": "fb-41",
+    "category": "food",
+    "question": "Did you know how I like my eggs cooked for breakfast?",
+    "options": [
+      "Scrambled soft and buttery",
+      "Bull's eye",
+      "Boiled or poached",
+      "In a loaded omelet with vegetables and cheese"
+    ]
+  },
+  {
+    "id": "fb-42",
+    "category": "childhood",
+    "question": "Do you know whether I was ever sent to the principal's office or got detention in school?",
+    "options": [
+      "Never once — I was a teacher's pet",
+      "Once or twice for silly reasons like talking too much",
+      "Multiple times for skipping class or pulling pranks",
+      "I narrowly escaped trouble every time"
+    ]
+  },
+  {
+    "id": "fb-43",
+    "category": "facts",
+    "question": "Did you know what animal I secretly feel most connected to?",
+    "options": [
+      "A loyal, energetic dog",
+      "An independent, sleepy house cat",
+      "A wise, nocturnal owl",
+      "A curious, playful dolphin or otter"
+    ]
+  },
+  {
+    "id": "fb-44",
+    "category": "lifestyle",
+    "question": "Do you know my shoe or sneaker habit in real life?",
+    "options": [
+      "I wear one favorite pair until the soles literally fall off",
+      "I have a sneaker collection with pairs for every outfit",
+      "I prioritize 100% comfort over aesthetic appeal",
+      "I own way too many formal shoes I never wear"
+    ]
+  },
+  {
+    "id": "fb-45",
+    "category": "quirks",
+    "question": "Did you know what happens to my voice or posture when I get really excited?",
+    "options": [
+      "My voice pitch goes up two octaves and I talk twice as fast",
+      "I start gesturing wildly with both hands",
+      "I laugh uncontrollably and slap my knee or table",
+      "My eyes widen and I lean in super close"
+    ]
+  },
+  {
+    "id": "fb-46",
+    "category": "travel",
+    "question": "Do you know whether I prefer the aisle or the window seat on flights?",
+    "options": [
+      "Window seat so I can rest my head and look outside",
+      "Aisle seat so I can stretch my legs and get up freely",
+      "I genuinely don't care as long as it's not middle",
+      "Middle seat because I like being squished (nobody picks this!)"
+    ]
+  },
+  {
+    "id": "fb-47",
+    "category": "hobbies",
+    "question": "Did you know what kind of books or articles I actually read when I have time?",
+    "options": [
+      "Gripping murder mysteries and fiction thrillers",
+      "Self-help, productivity, or business psychology",
+      "Fantasy and sci-fi worldbuilders",
+      "Biographies, history, or real-life memoirs"
+    ]
+  },
+  {
+    "id": "fb-48",
+    "category": "facts",
+    "question": "Do you know what my usual reaction is when someone surprises me?",
+    "options": [
+      "Jump out of my skin and gasp loudly",
+      "Stone-faced delayed reaction while processing",
+      "Laugh nervously and ask 'how did you pull that off?'",
+      "Play it cool like I knew it was coming all along"
+    ]
+  },
+  {
+    "id": "fb-49",
+    "category": "romance",
+    "question": "Did you know which relationship trait matters the absolute most to me?",
+    "options": [
+      "Being able to laugh until we can't breathe",
+      "Loyalty and knowing they always have my back",
+      "Deep intellectual conversations late at night",
+      "Giving each other space and independence to grow"
+    ]
+  },
+  {
+    "id": "fb-50",
+    "category": "facts",
+    "question": "Do you know what I consider my absolute best quality as a human being?",
+    "options": [
+      "My unwavering loyalty and dependability for friends",
+      "My sense of humor and ability to lighten any mood",
+      "My empathy and capacity to listen without judging",
+      "My resilience to bounce back from setbacks"
+    ]
+  }
+]

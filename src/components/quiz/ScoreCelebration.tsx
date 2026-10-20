@@ -62,7 +62,7 @@ export const ScoreCelebration: React.FC<ScoreCelebrationProps> = ({
             /{total}
           </span>
         </div>
-        <p className="text-sm font-semibold text-indigo-600">
+        <p className="text-sm font-semibold text-rose-600">
           {percentage}% Match with {creatorName}
         </p>
       </div>
@@ -73,7 +73,7 @@ export const ScoreCelebration: React.FC<ScoreCelebrationProps> = ({
           variant="accent"
           className="text-sm px-4 py-1.5 font-bold tracking-wide shadow-sm"
         >
-          <Award className="w-4 h-4 text-indigo-600" />
+          <Award className="w-4 h-4 text-rose-600" />
           <span>{tier.title}</span>
         </NeuBadge>
         <p className="text-sm text-gray-600 font-medium leading-relaxed">

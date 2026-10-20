@@ -54,7 +54,7 @@ export async function submitQuizAttempt(input: SubmitQuizInput) {
       // 3. Query questions with the true correct_option_index from the DB
       const { data: trueQuestions, error: qError } = await supabase
         .from('quiz_questions')
-        .select('id, order_index, question_text, options, correct_option_index')
+        .select('id, order_index, question_text, options, correct_option_index, remarks')
         .eq('quiz_id', quizId)
         .order('order_index', { ascending: true });
 
@@ -76,6 +76,7 @@ export async function submitQuizAttempt(input: SubmitQuizInput) {
             selected_index: selected,
             is_correct: isCorrect,
             correct_index: q.correct_option_index,
+            remarks: q.remarks || null,
           };
         });
 
@@ -155,6 +156,7 @@ export async function submitQuizAttempt(input: SubmitQuizInput) {
         selected_index: selected,
         is_correct: isCorrect,
         correct_index: q.correct_option_index,
+        remarks: q.remarks || null,
       };
     });
 

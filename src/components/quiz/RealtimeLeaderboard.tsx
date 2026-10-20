@@ -109,7 +109,7 @@ export const RealtimeLeaderboard: React.FC<RealtimeLeaderboardProps> = ({
       {/* Header */}
       <div className="flex items-center justify-between pb-4 border-b border-gray-200/50">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 shadow-neu-small">
+          <div className="w-10 h-10 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-600 shadow-neu-small">
             <Trophy className="w-5 h-5" />
           </div>
           <div>
@@ -151,7 +151,7 @@ export const RealtimeLeaderboard: React.FC<RealtimeLeaderboardProps> = ({
               <div
                 key={sub.id || index}
                 className={`neu-small rounded-2xl p-3.5 sm:p-4 flex items-center justify-between gap-3 transition-all ${
-                  isTopThree ? 'border border-indigo-100 bg-white/40' : ''
+                  isTopThree ? 'border border-rose-100 bg-white/40' : ''
                 }`}
               >
                 {/* Rank & User Info */}
@@ -184,7 +184,7 @@ export const RealtimeLeaderboard: React.FC<RealtimeLeaderboardProps> = ({
 
                 {/* Score Tag */}
                 <div className="flex items-baseline gap-1 neu-pressed px-3 py-1.5 rounded-xl shrink-0">
-                  <span className="text-base sm:text-lg font-black text-indigo-600">
+                  <span className="text-base sm:text-lg font-black text-rose-600">
                     {sub.score}
                   </span>
                   <span className="text-xs font-semibold text-gray-400">

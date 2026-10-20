@@ -4,6 +4,7 @@ import React from 'react';
 import { NeuCard } from '@/components/neumorphic/NeuCard';
 import { NeuButton } from '@/components/neumorphic/NeuButton';
 import { NeuBadge } from '@/components/neumorphic/NeuBadge';
+import { NeuAvatar } from '@/components/neumorphic/NeuAvatar';
 import { StagedQuestion } from '@/types/quiz';
 import { Trash2, ArrowUp, ArrowDown, CheckCircle2 } from 'lucide-react';
 
@@ -50,19 +51,23 @@ export const QuestionQueueList: React.FC<QuestionQueueListProps> = ({
             <NeuCard
               key={q.id}
               variant="flat"
-              className="p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all hover:border-indigo-200"
+              className="p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all hover:border-rose-200"
             >
               <div className="flex items-start gap-3.5 flex-1 min-w-0">
-                <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-indigo-600 text-white text-xs font-bold shrink-0 shadow-sm">
-                  {idx + 1}
-                </span>
+                {q.avatar ? (
+                  <NeuAvatar avatar={q.avatar} size="sm" variant="float" />
+                ) : (
+                  <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-rose-600 text-white text-xs font-bold shrink-0 shadow-sm">
+                    {idx + 1}
+                  </span>
+                )}
 
                 <div className="flex-1 min-w-0">
                   <p className="text-sm sm:text-base font-bold text-gray-800 break-words mb-1.5">
                     {q.question_text}
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                     <NeuBadge variant="success" className="text-[11px] py-0.5">
                       <CheckCircle2 className="w-3 h-3 text-emerald-600" />
                       <span>
@@ -75,6 +80,12 @@ export const QuestionQueueList: React.FC<QuestionQueueListProps> = ({
                       </NeuBadge>
                     )}
                   </div>
+                  {q.remarks && (
+                    <p className="mt-2 text-xs text-rose-700 bg-rose-50/70 rounded-xl px-3 py-1.5 border border-rose-100 flex items-start gap-1.5 italic">
+                      <span className="font-semibold not-italic">💬 Remarks:</span>
+                      <span>&ldquo;{q.remarks}&rdquo;</span>
+                    </p>
+                  )}
                 </div>
               </div>
 

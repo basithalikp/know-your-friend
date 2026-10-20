@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Amaranth } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -8,11 +8,18 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const amaranth = Amaranth({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-amaranth',
+});
+
 export const metadata: Metadata = {
   title: 'Know Your Friend | AI-Powered Friendship Quiz',
   description:
-    'Generate witty personal trivia questions using Google Gemini AI, challenge your friends to a single-attempt showdown, and watch live scores on a realtime leaderboard.',
-  keywords: ['friend quiz', 'AI trivia', 'know your friend', 'gemini ai', 'social quiz'],
+    'Generate witty personal trivia questions using AI, challenge your friends to a single-attempt showdown, and watch live scores on a realtime leaderboard.',
+  keywords: ['friend quiz', 'AI trivia', 'know your friend', 'social quiz'],
 };
 
 export default function RootLayout({
@@ -21,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
-      <body className="min-h-screen bg-neu-bg text-gray-800 font-sans selection:bg-indigo-500 selection:text-white">
+    <html lang="en" className={`${inter.variable} ${amaranth.variable} antialiased`}>
+      <body className="min-h-screen bg-neu-bg text-gray-800 font-sans selection:bg-rose-500 selection:text-white">
         {children}
       </body>
     </html>
