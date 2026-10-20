@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neu-bg: #eef2f6;
+  --color-neu-surface: #f0f4f8;
+  --color-neu-text: #4b5563;
+  --color-neu-dark: #1f2937;
+  --color-neu-muted: #9ca3af;
+  --color-neu-accent: #6366f1;
+  --color-neu-accent-soft: #818cf8;
+  --color-neu-success: #10b981;
+  --color-neu-error: #ef4444;
+
+  --shadow-neu-flat: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --shadow-neu-small: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+  --shadow-neu-pressed: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+  --shadow-neu-accent-inset: inset 3px 3px 6px rgba(99, 102, 241, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-success-inset: inset 3px 3px 6px rgba(16, 185, 129, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-float: 12px 12px 24px #cad4e2, -12px -12px 24px #ffffff;
+}
+
+:root {
+  --neu-bg: #eef2f6;
+  --neu-surface: #f0f4f8;
+  --neu-text: #4b5563;
+  --neu-dark: #1f2937;
+  --neu-muted: #9ca3af;
+  --neu-accent: #6366f1;
+  --neu-accent-soft: #818cf8;
+  --neu-success: #10b981;
+  --neu-error: #ef4444;
+
+  --shadow-neu-flat: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --shadow-neu-small: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+  --shadow-neu-pressed: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+  --shadow-neu-accent-inset: inset 3px 3px 6px rgba(99, 102, 241, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-success-inset: inset 3px 3px 6px rgba(16, 185, 129, 0.25), inset -3px -3px 6px #ffffff;
+  --shadow-neu-float: 12px 12px 24px #cad4e2, -12px -12px 24px #ffffff;
+}
+
+body {
+  background-color: var(--neu-bg);
+  color: var(--neu-text);
+  min-height: 100vh;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom Neumorphic Utility Classes */
+.neu-flat {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-flat);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.neu-small {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-small);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.neu-pressed {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-pressed);
+}
+
+.neu-accent-inset {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-accent-inset);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.neu-success-inset {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-success-inset);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.neu-float {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-neu-float);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #eef2f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
