@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/shared/Navbar';
 import { NeuCard } from '@/components/neumorphic/NeuCard';
@@ -288,6 +289,15 @@ export default function CreateQuizPage() {
               >
                 <span>View Live Scoreboard</span>
               </NeuButton>
+            </div>
+
+            <div className="pt-2 text-center">
+              <Link
+                href="/history"
+                className="text-xs font-semibold text-rose-600 hover:text-rose-700 underline"
+              >
+                View all my quizzes in History &rarr;
+              </Link>
             </div>
           </div>
         </NeuModal>

@@ -48,7 +48,9 @@ export async function publishQuiz(input: PublishQuizInput) {
 
       if (quizError || !quizData) {
         console.error('Supabase quiz insert error:', quizError);
-        // Fallback to local store if DB tables are pending
+        return {
+          error: `Database error: ${quizError?.message || 'Could not save quiz to Supabase.'} Make sure the database schema is installed.`,
+        };
       } else {
         // Insert questions
         const questionsToInsert = questions.map((q, idx) => ({
@@ -66,6 +68,7 @@ export async function publishQuiz(input: PublishQuizInput) {
 
         if (questionsError) {
           console.error('Supabase questions insert error:', questionsError);
+          return { error: `Failed to save questions: ${questionsError.message}` };
         } else {
           return { success: true, slug: quizData.slug, quizId: quizData.id };
         }

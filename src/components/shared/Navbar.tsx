@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { NeuButton } from '@/components/neumorphic/NeuButton';
 import { AuthModal } from '@/components/auth/AuthModal';
 import { createClient } from '@/lib/supabase/client';
-import { Sparkles, User, LogOut, PlusCircle, LogIn } from 'lucide-react';
+import { Sparkles, User, LogOut, PlusCircle, LogIn, History } from 'lucide-react';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
 
 export const Navbar: React.FC = () => {
@@ -82,6 +82,13 @@ export const Navbar: React.FC = () => {
 
             {!loading && user ? (
               <div className="flex items-center gap-2">
+                <Link href="/history">
+                  <NeuButton variant="default" size="sm" className="text-xs font-semibold">
+                    <History className="w-3.5 h-3.5 text-rose-600" />
+                    <span>My Quizzes</span>
+                  </NeuButton>
+                </Link>
+
                 <div className="flex items-center gap-2 neu-small px-3 py-1.5 rounded-xl border border-white/50">
                   {user.user_metadata?.avatar_url ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -108,15 +115,23 @@ export const Navbar: React.FC = () => {
                 </NeuButton>
               </div>
             ) : (
-              <NeuButton
-                variant="default"
-                size="sm"
-                onClick={() => setAuthModalOpen(true)}
-                className="text-xs font-semibold text-gray-700"
-              >
-                <LogIn className="w-3.5 h-3.5 text-rose-600" />
-                <span>Sign In / Sign Up</span>
-              </NeuButton>
+              <div className="flex items-center gap-2">
+                <Link href="/history">
+                  <NeuButton variant="ghost" size="sm" className="text-xs text-gray-600 hidden sm:inline-flex">
+                    <History className="w-3.5 h-3.5 text-rose-600" />
+                    <span>My Quizzes</span>
+                  </NeuButton>
+                </Link>
+                <NeuButton
+                  variant="default"
+                  size="sm"
+                  onClick={() => setAuthModalOpen(true)}
+                  className="text-xs font-semibold text-gray-700"
+                >
+                  <LogIn className="w-3.5 h-3.5 text-rose-600" />
+                  <span>Sign In / Sign Up</span>
+                </NeuButton>
+              </div>
             )}
           </div>
         </div>

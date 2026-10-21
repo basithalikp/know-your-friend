@@ -548,5 +548,555 @@
       "My empathy and capacity to listen without judging",
       "My resilience to bounce back from setbacks"
     ]
+  },
+  {
+    "id": "fb-51",
+    "category": "facts",
+    "question": "Do you know what my biggest superstition or lucky charm habit is?",
+    "options": [
+      "Knocking on wood whenever something good is mentioned",
+      "Wearing a lucky piece of clothing / accessory for big events",
+      "Avoiding walking under ladders or stepping on sidewalk cracks",
+      "I am strictly rational and don't believe in any superstitions"
+    ]
+  },
+  {
+    "id": "fb-52",
+    "category": "facts",
+    "question": "Did you know what time my phone alarm goes off on a typical workday?",
+    "options": [
+      "Before 6:30 AM (early riser mode)",
+      "Between 7:00 AM and 8:00 AM",
+      "Between 8:30 AM and 9:30 AM (just in time)",
+      "I don't have a fixed alarm / wake up naturally"
+    ]
+  },
+  {
+    "id": "fb-53",
+    "category": "facts",
+    "question": "Do you know whether I am naturally introverted, ambiverted, or extroverted?",
+    "options": [
+      "Classic introvert (recharge strictly alone)",
+      "Ambivert (social chameleon depending on the crowd)",
+      "Outgoing extrovert (energized by people and buzz)",
+      "Situational introvert (loud with best friends, silent with strangers)"
+    ]
+  },
+  {
+    "id": "fb-54",
+    "category": "facts",
+    "question": "Did you know what color dominates my daily wardrobe most often?",
+    "options": [
+      "All black / monochrome neutrals",
+      "White, beige, and earthy minimalist tones",
+      "Navy blue and denim shades",
+      "Bright, colorful, or patterned statement pieces"
+    ]
+  },
+  {
+    "id": "fb-55",
+    "category": "facts",
+    "question": "Do you know what my biggest immediate trigger for getting stressed or overwhelmed is?",
+    "options": [
+      "Having too many overlapping deadlines or unmade decisions",
+      "Sudden unexpected changes in plans or schedules",
+      "Chaotic, noisy, or cluttered surroundings",
+      "Feeling misunderstood or dealing with confrontation"
+    ]
+  },
+  {
+    "id": "fb-56",
+    "category": "nostalgia",
+    "question": "Did you know what my favorite cartoon or Saturday morning show was growing up?",
+    "options": [
+      "Pokémon / Digimon adventures",
+      "Tom & Jerry / Looney Tunes slapstick",
+      "Ben 10 / Powerpuff Girls / Cartoon Network classics",
+      "Disney afternoon cartoons (DuckTales, Kim Possible, etc.)"
+    ]
+  },
+  {
+    "id": "fb-57",
+    "category": "nostalgia",
+    "question": "Do you know what iconic gadget or tech device from my teen years I miss the most?",
+    "options": [
+      "Classic iPod with the physical click-wheel",
+      "Indestructible keypad phones (Nokia 3310 / Motorola Razr)",
+      "Portable handheld game consoles (Game Boy / PSP / DS)",
+      "Burning custom mix CDs or downloading MP3s on Limewire"
+    ]
+  },
+  {
+    "id": "fb-58",
+    "category": "nostalgia",
+    "question": "Did you know what school milestone or event I was most nervous about?",
+    "options": [
+      "Giving presentations in front of the whole class",
+      "First day at a new school or new grade",
+      "High school prom / graduation dance",
+      "Sports day or gym fitness tests"
+    ]
+  },
+  {
+    "id": "fb-59",
+    "category": "nostalgia",
+    "question": "Do you know what kind of playground or neighborhood games I played endlessly as a kid?",
+    "options": [
+      "Hide-and-seek / manhunt till streetlights came on",
+      "Street cricket, football, or pickup basketball",
+      "Bicycle races and neighborhood exploring with friends",
+      "Tag, dodgeball, or hopscotch on the pavement"
+    ]
+  },
+  {
+    "id": "fb-60",
+    "category": "nostalgia",
+    "question": "Did you know what song instantly transports me back to high school memories?",
+    "options": [
+      "2000s Pop / R&B classics (Rihanna, Usher, Britney)",
+      "2010s EDM anthems (Avicii, Calvin Harris, David Guetta)",
+      "Pop-punk and emo rock hits (Green Day, Fall Out Boy, Paramore)",
+      "Indie acoustic or sentimental folk ballads"
+    ]
+  },
+  {
+    "id": "fb-61",
+    "category": "food",
+    "question": "Do you know what my go-to comfort food order is when having a bad day?",
+    "options": [
+      "Crispy fried chicken or wings with fries",
+      "Warm cheesy pizza or garlic bread",
+      "A steaming bowl of noodles / spicy ramen",
+      "Rich chocolate dessert, ice cream, or milkshakes"
+    ]
+  },
+  {
+    "id": "fb-62",
+    "category": "food",
+    "question": "Did you know how I take my morning coffee or tea?",
+    "options": [
+      "Strong black coffee / espresso, no sugar",
+      "Creamy milk coffee or latte with vanilla or caramel",
+      "Traditional aromatic milk tea / masala chai",
+      "I don't drink caffeine — water, juice, or herbal tea only"
+    ]
+  },
+  {
+    "id": "fb-63",
+    "category": "food",
+    "question": "Do you know which dessert I can practically never turn down?",
+    "options": [
+      "Warm chocolate brownie with melting vanilla ice cream",
+      "Cheesecake (New York baked or fruit topped)",
+      "Fresh glazed donuts or flaky pastries",
+      "Artisanal gelato or frozen yogurt"
+    ]
+  },
+  {
+    "id": "fb-64",
+    "category": "food",
+    "question": "Did you know what my stance is on cooking at home vs ordering takeout?",
+    "options": [
+      "I love cooking from scratch and experimenting in the kitchen",
+      "I cook strictly for survival / quick simple meals",
+      "Takeout and food delivery apps are my best friends",
+      "I enjoy meal-prepping clean healthy staples for the week"
+    ]
+  },
+  {
+    "id": "fb-65",
+    "category": "food",
+    "question": "Do you know what type of cuisine I would happily eat every single week?",
+    "options": [
+      "Spicy South Asian / Indian curries and biryani",
+      "Italian pasta, risottos, and artisan pizza",
+      "Japanese sushi, ramen, and bento bowls",
+      "Mexican burritos, tacos, and fresh guacamole"
+    ]
+  },
+  {
+    "id": "fb-66",
+    "category": "quirks",
+    "question": "Did you know what weird habit I have with volume dials and screen brightness?",
+    "options": [
+      "Volume must always be on an even number or multiple of 5",
+      "Screen brightness is perpetually kept at minimum dark mode",
+      "I always turn subtitles on, even when English is crystal clear",
+      "I constantly adjust brightness until it matches room lighting exactly"
+    ]
+  },
+  {
+    "id": "fb-67",
+    "category": "quirks",
+    "question": "Do you know how many tabs I usually have open in my web browser?",
+    "options": [
+      "Under 5 tabs (strictly clean, closed when done)",
+      "Between 10 and 25 tabs across multiple windows",
+      "50+ tabs, organized into color-coded groups",
+      "A hopeless infinite jungle of unreadable micro-tabs"
+    ]
+  },
+  {
+    "id": "fb-68",
+    "category": "quirks",
+    "question": "Did you know what odd quirk I display while watching suspenseful movies?",
+    "options": [
+      "I secretly look up the Wikipedia plot summary ahead of time",
+      "I hide behind a blanket or pillow during intense scenes",
+      "I talk to the screen warning the main character what not to do",
+      "I hyper-analyze camera angles and predict the plot twist"
+    ]
+  },
+  {
+    "id": "fb-69",
+    "category": "quirks",
+    "question": "Do you know what I do immediately when entering my hotel room or Airbnb?",
+    "options": [
+      "Inspect the bathroom and check shower water pressure",
+      "Jump straight onto the bed to test mattress softness",
+      "Unpack everything immediately and hang up clothes",
+      "Scan the room for electrical outlets and plug my chargers in"
+    ]
+  },
+  {
+    "id": "fb-70",
+    "category": "quirks",
+    "question": "Did you know what my quirk is when listening to music with headphones?",
+    "options": [
+      "I lip-sync and imagine music video scenarios in my head",
+      "I will replay the exact same single song 20 times in a row",
+      "I keep one earbud half-out so I know what's happening around me",
+      "I air-drum or tap my fingers along to every beat"
+    ]
+  },
+  {
+    "id": "fb-71",
+    "category": "childhood",
+    "question": "Do you know what kind of student I was in elementary and middle school?",
+    "options": [
+      "The quiet teacher's pet sitting in the front row",
+      "The class clown always making people laugh in the back",
+      "The creative daydreamer doodling in notebooks",
+      "The competitive high achiever aiming for top grades"
+    ]
+  },
+  {
+    "id": "fb-72",
+    "category": "childhood",
+    "question": "Did you know what my favorite childhood bedtime story or book series was?",
+    "options": [
+      "Harry Potter or fantasy adventure novels",
+      "Enid Blyton / Nancy Drew / Hardy Boys mysteries",
+      "Comic books and graphic novels (Spider-Man, Tintin, Asterix)",
+      "Fairy tales and bedtime folktales told by grandparents"
+    ]
+  },
+  {
+    "id": "fb-73",
+    "category": "childhood",
+    "question": "Do you know which chore my parents always nagged me to do as a kid?",
+    "options": [
+      "Cleaning and tidying my messy bedroom",
+      "Doing dishes or setting the dinner table",
+      "Taking out the trash or recycling",
+      "Finishing homework before touching any screen"
+    ]
+  },
+  {
+    "id": "fb-74",
+    "category": "childhood",
+    "question": "Did you know what I collected obsessively during my childhood?",
+    "options": [
+      "Pokemon cards, trading cards, or Beyblades",
+      "Stickers, colorful stationery, and gel pens",
+      "Toy cars, Hot Wheels, or Lego minifigures",
+      "Coins, rocks, stamps, or shells from vacations"
+    ]
+  },
+  {
+    "id": "fb-75",
+    "category": "childhood",
+    "question": "Do you know what kind of pet or animal I begged my parents for as a child?",
+    "options": [
+      "A playful puppy / dog",
+      "A cute kitten / cat",
+      "An aquarium with colorful fish or a turtle",
+      "A bird, hamster, or bunny rabbit"
+    ]
+  },
+  {
+    "id": "fb-76",
+    "category": "entertainment",
+    "question": "Did you know what genre of movies or TV shows I get most hooked on?",
+    "options": [
+      "Mind-bending psychological thrillers and crime mysteries",
+      "Cozy lighthearted sitcoms and feel-good comedies",
+      "Epic sci-fi and high-concept fantasy sagas",
+      "Gripping real-life documentaries and docuseries"
+    ]
+  },
+  {
+    "id": "fb-77",
+    "category": "entertainment",
+    "question": "Do you know which comfort TV show I put on in the background while doing chores?",
+    "options": [
+      "The Office / Brooklyn Nine-Nine / Parks and Rec",
+      "Friends / Modern Family / How I Met Your Mother",
+      "Anime series (Naruto, One Piece, Jujutsu Kaisen)",
+      "Culinary / travel competition shows (MasterChef, Bake Off)"
+    ]
+  },
+  {
+    "id": "fb-78",
+    "category": "entertainment",
+    "question": "Did you know how I prefer to experience a movie at the cinema?",
+    "options": [
+      "Opening night in IMAX with giant popcorn and soda",
+      "Late-night quiet screening with minimal crowds",
+      "I prefer streaming in bed in pajamas over movie theaters",
+      "VIP recliner seats with gourmet snacks served to the seat"
+    ]
+  },
+  {
+    "id": "fb-79",
+    "category": "entertainment",
+    "question": "Do you know what type of YouTube or podcast content I consume the most?",
+    "options": [
+      "Deep-dive video essays and tech/science explainers",
+      "True crime mysteries and investigative storytelling",
+      "Comedy, conversational podcasts, and banter shows",
+      "Travel vlogs, food explorations, and lifestyle routines"
+    ]
+  },
+  {
+    "id": "fb-80",
+    "category": "entertainment",
+    "question": "Did you know which video game genre I find most relaxing or fun?",
+    "options": [
+      "Cozy farming/life sims (Animal Crossing, Stardew Valley)",
+      "Fast-paced competitive multiplayer (shooters, battle royale)",
+      "Story-rich open world RPGs (Zelda, Witcher, Elden Ring)",
+      "Puzzle, strategy, and casual mobile puzzle games"
+    ]
+  },
+  {
+    "id": "fb-81",
+    "category": "hobbies",
+    "question": "Do you know what hobby I secretly want to pick up next?",
+    "options": [
+      "Pottery, ceramics, or woodworking",
+      "Learning a new musical instrument (keyboard, acoustic guitar)",
+      "Photography, photo editing, and street videography",
+      "Indoor bouldering / rock climbing"
+    ]
+  },
+  {
+    "id": "fb-82",
+    "category": "hobbies",
+    "question": "Did you know how I spend a completely free Sunday afternoon with no obligations?",
+    "options": [
+      "Curled up reading a book or listening to an album",
+      "Getting outdoors for a scenic walk, hike, or bike ride",
+      "Binge-gaming or watching films guilt-free",
+      "Trying a new café or hunting down thrift/book shops"
+    ]
+  },
+  {
+    "id": "fb-83",
+    "category": "hobbies",
+    "question": "Do you know what creative outlet gives me the most mental clarity?",
+    "options": [
+      "Journaling, writing down thoughts, or personal blogging",
+      "Sketching, painting, or digital illustration",
+      "Baking complex treats or plating artisanal dinners",
+      "Curating hyper-specific music playlists for different vibes"
+    ]
+  },
+  {
+    "id": "fb-84",
+    "category": "hobbies",
+    "question": "Did you know what kind of physical exercise or workout I actually enjoy?",
+    "options": [
+      "Weightlifting and strength training at the gym",
+      "Running outdoors, jogging, or brisk morning walks",
+      "Team sports (football, badminton, basketball)",
+      "Yoga, Pilates, or stretch sessions at home"
+    ]
+  },
+  {
+    "id": "fb-85",
+    "category": "hobbies",
+    "question": "Do you know which board game or tabletop game night role I naturally take?",
+    "options": [
+      "The rulebook expert who explains all rules and mechanics",
+      "The ruthless strategist plotting three moves ahead",
+      "The chaotic player who just wants to cause fun drama",
+      "The socializer who plays casually while snacking"
+    ]
+  },
+  {
+    "id": "fb-86",
+    "category": "romance",
+    "question": "Did you know what my primary love language is?",
+    "options": [
+      "Quality time (undivided attention and deep talks)",
+      "Words of affirmation (heartfelt compliments and encouragement)",
+      "Acts of service (doing thoughtful little things that help)",
+      "Physical touch and warm affection"
+    ]
+  },
+  {
+    "id": "fb-87",
+    "category": "romance",
+    "question": "Do you know what my idea of an ideal date night looks like?",
+    "options": [
+      "A quiet candlelight dinner at a cozy hidden restaurant",
+      "Cooking dinner together at home with wine and good music",
+      "An adventurous activity (arcade, museum, mini-golf, concert)",
+      "Sunset picnic in a park with blankets and snacks"
+    ]
+  },
+  {
+    "id": "fb-88",
+    "category": "romance",
+    "question": "Did you know what instant green flag makes me respect someone deeply?",
+    "options": [
+      "Being genuinely polite and kind to waitstaff and service workers",
+      "Active listening and remembering small details mentioned weeks ago",
+      "Having a great sense of humor and not taking themselves too seriously",
+      "Clear communication and emotional maturity during disagreements"
+    ]
+  },
+  {
+    "id": "fb-89",
+    "category": "romance",
+    "question": "Do you know what my biggest immediate dating turn-off or red flag is?",
+    "options": [
+      "Being glued to their phone during the conversation",
+      "Constantly talking about themselves without asking about me",
+      "Being rude, entitled, or condescending to people",
+      "Flakiness, inconsistency, and poor communication"
+    ]
+  },
+  {
+    "id": "fb-90",
+    "category": "romance",
+    "question": "Did you know whether I am a romantic optimist or a realistic skeptic?",
+    "options": [
+      "Hopeless romantic who believes in soulmates and movie moments",
+      "Realistic optimist (love takes daily effort and teamwork)",
+      "Pragmatic realist (compatibility and shared values come first)",
+      "Cautious romantic who takes time to truly open up"
+    ]
+  },
+  {
+    "id": "fb-91",
+    "category": "travel",
+    "question": "Do you know whether I prefer a relaxing resort vacation or an active adventure?",
+    "options": [
+      "Total relaxation: laying by the beach/pool with a drink in hand",
+      "Action-packed: hiking mountains, exploring nature, and adrenaline sports",
+      "Cultural immersion: wandering old streets, museums, and food markets",
+      "A balanced mix: explore hard in the morning, lounge in the afternoon"
+    ]
+  },
+  {
+    "id": "fb-92",
+    "category": "travel",
+    "question": "Did you know what kind of climate and landscape I gravitate toward on trips?",
+    "options": [
+      "Crisp snowy mountains, cozy cabins, and fresh alpine air",
+      "Sun-drenched tropical islands and turquoise ocean waters",
+      "Historic cobblestone European towns and vibrant architecture",
+      "Serene countryside, lush green valleys, and peaceful lakes"
+    ]
+  },
+  {
+    "id": "fb-93",
+    "category": "travel",
+    "question": "Do you know how I plan our daily itinerary when traveling?",
+    "options": [
+      "Detailed spreadsheet with hourly plans, reservations, and backup spots",
+      "A loose list of 2–3 must-sees, leaving the rest open to wander",
+      "Zero itinerary — wake up and see where curiosity takes me",
+      "I happily follow whatever my travel companion plans!"
+    ]
+  },
+  {
+    "id": "fb-94",
+    "category": "travel",
+    "question": "Did you know what my airport arrival routine is like?",
+    "options": [
+      "Paranoid traveler: arrived 3.5 hours before departure sitting at the gate",
+      "On-schedule pro: smoothly pass security with 1.5 hours to spare",
+      "Last-minute adrenaline: sprinting through the terminal as boarding calls",
+      "Lounge-first: bee-line to the lounge for complimentary snacks and coffee"
+    ]
+  },
+  {
+    "id": "fb-95",
+    "category": "travel",
+    "question": "Do you know what souvenir or memento I usually bring back from trips?",
+    "options": [
+      "Local snacks, coffee beans, spices, or wine",
+      "Fridge magnets, postcards, or enamel pins",
+      "Handcrafted art, ceramics, or clothing from local artisans",
+      "Just hundreds of high-res photos and candid memories"
+    ]
+  },
+  {
+    "id": "fb-96",
+    "category": "lifestyle",
+    "question": "Did you know what my ideal weekend morning routine looks like?",
+    "options": [
+      "Sleeping in late with zero alarms, followed by lazy brunch",
+      "Waking up early, making fresh coffee, and savoring the quiet calm",
+      "Hitting a morning workout or run before starting the day",
+      "Meeting friends early for breakfast or a weekend farmers market"
+    ]
+  },
+  {
+    "id": "fb-97",
+    "category": "lifestyle",
+    "question": "Do you know what my phone screen time and notification philosophy is?",
+    "options": [
+      "Strict Do Not Disturb / Focus mode is on almost 24/7",
+      "I reply instantly to every ping within seconds",
+      "I check my phone in batches a couple times during the day",
+      "High screen time with endless scrolling reels and videos"
+    ]
+  },
+  {
+    "id": "fb-98",
+    "category": "lifestyle",
+    "question": "Did you know how I manage my monthly personal finances and spending?",
+    "options": [
+      "Detailed budget spreadsheets tracking every single expense",
+      "General ballpark awareness as long as savings grow each month",
+      "Impulsive splurger who treats oneself often",
+      "Frugal minimalist who researches weeks before buying anything"
+    ]
+  },
+  {
+    "id": "fb-99",
+    "category": "lifestyle",
+    "question": "Do you know what my workspace or desk setup looks like in reality?",
+    "options": [
+      "Minimalist and pristine: only laptop, mousepad, and water bottle",
+      "Multi-monitor powerhouse with mechanical keyboard and RGB lights",
+      "Organized chaos: sticky notes, books, coffee mugs, and gadgets",
+      "Nomadic worker: couch, dining table, bed, or local coffee shop"
+    ]
+  },
+  {
+    "id": "fb-100",
+    "category": "lifestyle",
+    "question": "Did you know what lifestyle upgrade I consider 100% worth the money?",
+    "options": [
+      "A high-end ergonomic mattress and luxury pillows",
+      "Noise-cancelling premium headphones",
+      "Great specialty coffee gear or an espresso machine",
+      "Convenience services (cleaning help, food delivery, rideshares)"
+    ]
   }
 ]
