@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { NeuButton } from '@/components/neumorphic/NeuButton';
 import { AuthModal } from '@/components/auth/AuthModal';
 import { createClient } from '@/lib/supabase/client';
@@ -50,8 +51,15 @@ export const Navbar: React.FC = () => {
         <div className="neu-flat rounded-2xl sm:rounded-3xl px-4 sm:px-6 py-3 flex items-center justify-between border border-white/80 backdrop-blur-md">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-rose-500 to-rose-600 shadow-neu-small flex items-center justify-center text-white transition-transform group-hover:scale-105">
-              <Sparkles className="w-5 h-5 fill-white/20" />
+            <div className="w-9 h-9 rounded-xl overflow-hidden shadow-neu-small flex items-center justify-center bg-gray-100 transition-transform group-hover:scale-105 border border-white/80">
+              <Image
+                src="/logo.svg"
+                alt="Know Your Friend Logo"
+                width={36}
+                height={36}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-base sm:text-lg font-bold tracking-tight text-gray-800 flex items-center gap-1.5">

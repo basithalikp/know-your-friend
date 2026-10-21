@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   description:
     'Generate witty personal trivia questions using AI, challenge your friends to a single-attempt showdown, and watch live scores on a realtime leaderboard.',
   keywords: ['friend quiz', 'AI trivia', 'know your friend', 'social quiz'],
+  icons: {
+    icon: [
+      { url: '/logo.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    shortcut: '/logo.svg',
+    apple: '/logo.svg',
+  },
 };
 
 export default function RootLayout({
